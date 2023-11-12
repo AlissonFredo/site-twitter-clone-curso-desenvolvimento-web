@@ -2,15 +2,17 @@
 
 namespace App;
 
-class Connection {
+class Connection
+{
 
-	public static function getDb() {
+	public static function getDb()
+	{
 		try {
 
 			$conn = new \PDO(
 				"mysql:host=localhost;dbname=twitter_clone;charset=utf8",
 				"root",
-				"47717310" 
+				"47717310"
 			);
 
 			return $conn;
